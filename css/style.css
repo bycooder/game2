@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+body {
+  height: 100vh;
+  background-image: url(https://blog.sklambert.com/wp-content/uploads/2012/09/bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+.display {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+.mainGame {
+  margin-top: 7%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.tubeImg {
+  height: 160px;
+}
+.oneElement {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hamyak {
+  display: none;
+  position: absolute;
+  top: -15px;
+  left: 40%;
+  height: 70px;
+  cursor: pointer;
+}
+.yomon {
+  display: none;
+  position: absolute;
+  top: -39px;
+  left: 43%;
+  height: 95px;
+  cursor: pointer;
+}
+.container {
+  background-image: url(https://www.shutterstock.com/image-vector/old-video-game-retro-style-260nw-1052567756.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.controlBtn {
+  margin: 0 1rem;
+  padding: 10px 20px;
+  font-size: 1.4rem;
+  border-radius: 30px;
+  border: 2px solid green;
+  background-color: hsl(118, 45%, 60%);
+  cursor: pointer;
+}
+
+@media (max-width: 1400px) {
+}
+@media (max-width: 991px) {
+  .tubeImg {
+    height: 140px;
+  }
+
+  .hamyak {
+    position: absolute;
+    top: -15px;
+    left: 38%;
+    height: 60px;
+  }
+  .yomon {
+    position: absolute;
+    top: -39px;
+    left: 40%;
+    height: 90px;
+  }
+}
+@media (max-width: 768px) {
+  .tubeImg {
+    height: 120px;
+  }
+
+  .hamyak {
+    position: absolute;
+    top: -15px;
+    left: 35%;
+    height: 55px;
+  }
+  .yomon {
+    position: absolute;
+    top: -37px;
+    left: 38%;
+    height: 80px;
+  }
+}
+@media (max-width: 450px) {
+  .tubeImg {
+    height: 100px;
+  }
+
+  .hamyak {
+    position: absolute;
+    top: -15px;
+    left: 30%;
+    height: 45px;
+  }
+  .yomon {
+    position: absolute;
+    top: -35px;
+    left: 33%;
+    height: 70px;
+  }
+}
+@media (max-width: 366px) {
+  .tubeImg {
+    height: 80px;
+  }
+  .hamyak {
+    position: absolute;
+    top: -15px;
+    left: 22%;
+    height: 45px;
+  }
+  .yomon {
+    position: absolute;
+    top: -35px;
+    left: 27%;
+    height: 67px;
+  }
+  .control {
+    padding: 20px;
+  }
+  .controlBtn {
+    margin: 0 0.3rem;
+    padding: 6px 12px;
+    font-size: 1.4rem;
+    border-radius: 30px;
+    border: 2px solid green;
+    background-color: hsl(118, 45%, 60%);
+  }
+}
